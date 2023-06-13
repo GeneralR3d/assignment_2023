@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	rpc "github.com/TikTokTechImmersion/assignment_demo_2023/rpc-server/kitex_gen/rpc/imservice"
 	"github.com/cloudwego/kitex/pkg/rpcinfo"
@@ -9,7 +10,13 @@ import (
 	"log"
 )
 
+var (
+	rdb = &RedisClient{} // make the RedisClient with global visibility in the 'main' scope
+)
+
 func main() {
+
+	ctx := context.Background()
 
 	err := rdb.InitClient(ctx, "redis:6379", "")
 	if err != nil {
