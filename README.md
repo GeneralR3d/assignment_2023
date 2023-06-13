@@ -1,8 +1,10 @@
-# assignment_demo_2023
+# assignment_2023
 
 ![Tests](https://github.com/TikTokTechImmersion/assignment_demo_2023/actions/workflows/test.yml/badge.svg)
 
-This is a demo and template for backend assignment of 2023 TikTok Tech Immersion.
+This is my submission for Tiktok Tech Immersion Assignment.
+Name: Tuan Ding Ren
+school email: dtuan001@e.ntu.edu.sg
 
 ## Installation
 
